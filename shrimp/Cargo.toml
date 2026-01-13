@@ -1,0 +1,17 @@
+[package]
+name = "shrimp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iced = "0.14.0"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+enum_glob_use = "deny"
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }
+unwrap_used = "deny"
+# missing_docs_in_private_items = "warn"

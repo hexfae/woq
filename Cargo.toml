@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = ["shrimp"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
