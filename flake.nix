@@ -5,12 +5,18 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wit-deps = {
+      url = "https://github.com/bytecodealliance/wit-deps.git";
+      inputs.nixpkgs-unstable.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     rust-overlay,
+    wit-deps,
   } @ inputs: let
     pkgs = import inputs.nixpkgs {
       system = "x86_64-linux";

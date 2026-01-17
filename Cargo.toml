@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["shrimp"]
+members = ["crates/*"]
 
 [profile.release]
 opt-level = "z"
